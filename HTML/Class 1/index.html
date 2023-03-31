@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web page</title>
+    <style>
+        .header{
+            border-bottom: 1px solid #000;        
+        }
+
+        .logo{
+            width: 50px;
+        }
+
+        nav{
+            display: inline-block;
+            position: relative;
+            top: -20px;
+            padding-left: 20px;
+        }
+
+        a{
+            color: #fff;
+            background-color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 1px solid #000;
+        }
+
+        a:hover{
+            color: #000;
+            background-color: #fff;
+        }
+
+        a.btn-inset{
+            color: #333;
+            border: 0px;
+            background-color: lightblue;
+            border-bottom: 2px solid darkblue;
+            border-right: 2px solid darkblue;
+        }
+
+        a.btn-inset:hover{
+            border-top: 2px solid darkblue;
+            border-left: 2px solid darkblue;
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" class="logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" class="btn-inset">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </div>
+    <h1>Essential parts of a website</h1>
+    <p>We have listed all parts bellow:</p>
+    <ol>
+        <li>Header</li>
+        <li>Footer</li>
+        <li>Logo</li>
+        <li>Call to action</li>
+        <li>Sidebar</li>
+    </ol>
+</body>
+</html>
