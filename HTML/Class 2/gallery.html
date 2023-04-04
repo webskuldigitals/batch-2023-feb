@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img,
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            margin: 0 auto;
+            width: 900px;
+            background-color: black;
+        }
+
+        main {
+            margin: 0 auto;
+            width: 900px;
+        }
+
+        .main-nav {
+            display: inline-block;
+        }
+
+        .main-nav li {
+            display: inline-block;
+            position: relative;
+            top: -20px;
+            ;
+        }
+
+        .main-nav li a {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ddd;
+            padding: 10px;
+        }
+
+        .main-nav li a:hover {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .logo {
+            width: 100%;
+        }
+
+        aside {
+            width: 205px;
+            background-color: #999;
+            float: left;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .main-content {
+            float: left;
+            width: 655px;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            background-color: #000;
+            color: #ddd;
+            padding: 10px;
+        }
+
+        .masonry {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item {
+            width: calc(33.33% - 10px);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .item:before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+
+        @media screen and (max-width: 991px) {
+            .item {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+            .item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/banner.jpg" alt="Welcome to my website">
+        <nav>
+            <img src="img/logo.gif" alt="">
+            <ul class="main-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="gallery.html">Our gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h2>Get Help</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nostrum pariatur maiores consequatur
+                dignissimos eaque doloremque dicta deserunt consectetur, dolore quisquam quibusdam culpa ut voluptatibus
+                labore magni esse sunt sapiente?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure laboriosam inventore ea repellat suscipit
+                amet, magnam nisi incidunt quis porro voluptatem id quia, quas, veniam ipsam? Omnis expedita cumque cum.
+            </p>
+        </aside>
+        <div class="main-content">
+            <h1>Our golden memories</h1>
+            <div class="masonry">
+                <div class="item">
+                    <img src="https://picsum.photos/300/400" alt="Demo Image">
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/300/450" alt="Demo Image">
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/300/500" alt="Demo Image">
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/300/550" alt="Demo Image">
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/300/600" alt="Demo Image">
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/300/650" alt="Demo Image">
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/300/700" alt="Demo Image">
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/300/750" alt="Demo Image">
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <footer>
+            @copywrite Webskul Digital Innovations - 2023
+        </footer>
+    </main>
+</body>
+
+</html>
