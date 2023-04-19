@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webskul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <style>
+        .logo{
+            font-family: 'Vollkorn', serif;
+            font-size: 40px;
+            padding: 20px 0px;
+        }
+
+        .nav a{
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            background: #fff;
+            color: #1a73e8;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin-right: 5px;
+        }
+        
+        .nav a:hover{
+            background: #1a73e8;
+            color: #fff;
+        }
+        .banner-image{
+            width: 50%;
+            margin-top: 30px;
+            border: 2px solid #1a73e8;
+            border-radius: 8px;
+            text-shadow: 2px 2px 2px black;
+            color: #1a73e8;
+            /* padding: 20px; */
+            box-shadow: 10px 10px 10px #000;
+        }
+
+        .banner-with-image-text{
+            margin-top: 30px;
+            background-image: url('img/banner-image.avif');
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+            width: calc(50% - 50px);
+            padding-top: 30px;
+            padding-bottom: 160px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 15px #000;
+            padding-left: 50px;
+            border: 2px solid #1a73e8;
+        }
+        .banner-with-image-text h1{
+            color: #991133;
+            font-family: 'Vollkorn', serif;
+            text-shadow: 1px 1px 3px #ff0;
+            font-family: 'Sedgwick Ave Display', cursive;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="logo">Webskul</div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Gallery</a>
+        <a href="#">FAQs</a>
+    </div>
+    <div>
+        <img class="banner-image" src="img/banner-image.avif" />
+        <p>Hello!</p>
+    </div>
+    <div class="banner-image">
+        <h1>Welcome to Webskul</h1>
+    </div>
+    <div class="banner-with-image-text">
+        <h1>Welcome to my Webskul</h1>
+    </div>
+</body>
+</html>
