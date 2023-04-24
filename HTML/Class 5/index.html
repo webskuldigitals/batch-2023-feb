@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts in HTML with FLOAT</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            border: 3px dotted red;
+        }
+        .container{
+            width: 90%;
+            border: 2px dashed #0f0;
+            margin: 0 auto; /* Pull container in center*/
+        }
+
+        .first{
+            border: 5px solid #f60;
+            width: calc(25% - 10px);
+            float: left;
+        }
+
+        .second{
+            border: 5px solid #6f0;
+            width: calc(50% - 10px);
+            float: left;
+        }
+
+        .third{
+            border: 5px solid #06f;
+            width: calc(25% - 10px);
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>Main div</div>
+        <div class="container">
+            <div>Container Div</div>
+            <div class="first">First Div</div>
+            <div class="second">Second Div</div>
+            <div class="third">Third Div</div>
+            <div class="clear"></div>
+        </div> 
+    </div>
+</body>
+</html>
