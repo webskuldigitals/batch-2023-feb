@@ -1,0 +1,7 @@
+1) Goto folder where you want to copy codes
+2) Run CMD from address bar
+
+3) git clone https://github.com/webskuldigitals/batch-2023-feb.git
+
+Somethig updated
+4) git pull
