@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="name_input"><button id="add_new_name">Add new name</button><br><br>
+    <table border="1" id="name_container">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ram</td>
+            </tr>
+            <tr>
+                <td>Raj</td>
+            </tr>
+            <tr>
+                <td>Rahul</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        $('#add_new_name').on('click', function(){
+            var text = $('#name_input').val();
+            var row = "<tr><td>"+text+"</td></tr>";
+            $('#name_container tbody').append(row);
+            $('#name_input').val('');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+*{
+    margin: 5px;
+}
+
+.success{
+    border: solid 5px #4d2;
+}
+
+.error{
+    border: solid 5px #d42;
+}
+.fade{
+    display: none;
+}
